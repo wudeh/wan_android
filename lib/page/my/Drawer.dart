@@ -10,6 +10,7 @@ import '../provider/Color.dart';
 import '../BrowserPage.dart';
 import 'package:multi_image/event/LoginEvent.dart';
 import '../../main.dart';
+import './MieBa.dart';
 
 class DrawerPage extends StatefulWidget {
   final Widget child;
@@ -49,7 +50,7 @@ class _DrawerPageState extends State<DrawerPage> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(
+      child: ListView(
         children: <Widget>[
           UserAccountsDrawerHeader(
             currentAccountPicture: ClipOval(
@@ -113,6 +114,13 @@ class _DrawerPageState extends State<DrawerPage> {
                 );
               }),
             ],
+          ),
+          // 灭霸动画效果 只需要传进去一个你想要做出灭霸效果的 widget 即可
+          Sandable(
+            child: ListTile(
+              leading: ClipOval(child: Image(image: AssetImage('assets/img/mieba.png'),),),
+              title: Text('点一下 玩灭霸',style: TextStyle(color: Theme.of(context).primaryColor),),
+            ),
           )
         ],
       ),

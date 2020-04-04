@@ -19,7 +19,7 @@ class RankPage extends StatefulWidget {
 
 class RankPageState extends State<RankPage> {
   List<RankEntity> rankList = [];
-  int currentPage = 0;
+  int currentPage = 1;
 
   //  加载文章
   loadArticleData() async {
@@ -55,7 +55,7 @@ class RankPageState extends State<RankPage> {
             }),
         onRefresh: () async {
           rankList.clear();
-          currentPage = 0;
+          currentPage = 1;
           loadArticleData();
         },
         onLoad: () async {

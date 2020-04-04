@@ -154,6 +154,7 @@ flutter:
     - assets/img/pic_404.jpg
     - assets/img/zan_0.png
     - assets/img/zan_1.png
+    - assets/img/mieba.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

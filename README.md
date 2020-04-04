@@ -2,6 +2,19 @@ Flutter版的玩安卓客户端
 
 ## 效果展示
 请手动到 screenshot 这个截图文件夹里查看APP截图
+<img src="./screenshot/11.png">
+<img src="./screenshot/1.png">
+<img src="./screenshot/2.png">
+<img src="./screenshot/3.png">
+<img src="./screenshot/4.png">
+<img src="./screenshot/5.png">
+<img src="./screenshot/6.png">
+<img src="./screenshot/7.png">
+<img src="./screenshot/8.png">
+
+## 下载安装
+密码：wwwww
+![](https://www.pgyer.com/app/qrcode/flutter_WanAndroid?sign=S4bQOHIDdhugKdEUxoFHszORlUwJBBMn06qSLrTx3Ik2sIpPmqUggkn1Vfua616K&auSign=&code=)
 
 ## 项目中用到的插件
   flutter_screenutil: ^0.5.3  #屏幕适配  
