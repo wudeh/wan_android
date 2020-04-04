@@ -154,8 +154,8 @@ class _SandableState extends State<Sandable> with TickerProviderStateMixin{
           onTap: () {
             blow();
           },
-          // 当动画开始  本体隐藏
-          child: _mainController.isAnimating
+          // 当动画开始或者结束  本体隐藏
+          child: _mainController.isAnimating || _mainController.isCompleted
               ? Container()
               : RepaintBoundary(
                   key: _globalKey,
