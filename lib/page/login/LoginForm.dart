@@ -27,11 +27,16 @@ class LoginForm extends StatefulWidget {
 class LoginFormState extends State<LoginForm>
     with AutomaticKeepAliveClientMixin {
   PageController _pageController;
-
   LoginFormState(this._pageController);
 
   String _name;
   String _pwd;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +44,7 @@ class LoginFormState extends State<LoginForm>
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         new Container(
-          height: ScreenUtil.getInstance().setHeight(11),
+          height: ScreenUtil.getInstance().setHeight(5),
         ),
         new GestureDetector(
           child: new Row(
@@ -74,7 +79,7 @@ class LoginFormState extends State<LoginForm>
           },
         ),
         new Container(
-          margin: EdgeInsets.only(top: ScreenUtil.getInstance().setWidth(110)),
+          margin: EdgeInsets.only(top: ScreenUtil.getInstance().setHeight(10)),
           width: ScreenUtil.getInstance().setWidth(750),
           child: new Column(
             children: <Widget>[
@@ -136,15 +141,15 @@ class LoginFormState extends State<LoginForm>
     );
   }
 
-  void doLogin() {
+  void doLogin() async {
     var data;
     data = {'username': _name, 'password': _pwd};
     HttpRequest.getInstance().post(Api.LOGIN, data: data,
         successCallBack: (data) {
-      eventBus.fire(LoginEvent());  // 发送登录事件广播
-      T.showToast("登录成功！");
-      saveInfo(data);
-      Navigator.of(context).pop();
+        eventBus.fire(LoginEvent());  // 发送登录事件广播
+        T.showToast("登录成功！");
+        saveInfo(data);
+        Navigator.of(context).pop();
     }, errorCallBack: (code, msg) {
       T.showToast(msg);
     });

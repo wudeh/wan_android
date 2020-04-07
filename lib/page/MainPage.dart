@@ -18,7 +18,7 @@ import 'package:multi_image/Config.dart';
 import '../entity/login_entity.dart';
 import '../http/HttpRequest.dart';
 import 'dart:convert';
-import './my/Drawer.dart';
+import './Drawer/Drawer.dart';
 //主页面
 class MainPage extends StatelessWidget {
   @override
@@ -108,6 +108,7 @@ class _splashPageState extends State<splashPage> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
        body: Center(
          child: Container(
              child: Column(

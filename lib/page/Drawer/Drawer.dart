@@ -11,6 +11,7 @@ import '../BrowserPage.dart';
 import 'package:multi_image/event/LoginEvent.dart';
 import '../../main.dart';
 import './MieBa.dart';
+import './Download.dart';
 
 class DrawerPage extends StatefulWidget {
   final Widget child;
@@ -86,10 +87,11 @@ class _DrawerPageState extends State<DrawerPage> {
                   );
               }));
             },
-            leading: Icon(Icons.account_balance,color: Theme.of(context).primaryColor),
+            leading: Icon(Icons.airline_seat_flat_angled,color: Theme.of(context).primaryColor),
             title: Text('本应用数据来源',style: TextStyle(color: Theme.of(context).primaryColor),),
             trailing: Icon(Icons.chevron_right,color: Theme.of(context).primaryColor),
           ),
+          DownloadPage(),
           ExpansionTile(
             leading: Icon(Icons.accessibility),
             title: Text('主题颜色'),
@@ -119,7 +121,7 @@ class _DrawerPageState extends State<DrawerPage> {
           Sandable(
             child: ListTile(
               leading: ClipOval(child: Image(image: AssetImage('assets/img/mieba.png'),),),
-              title: Text('点一下 玩灭霸',style: TextStyle(color: Theme.of(context).primaryColor),),
+              title: Text('点一下 你就是灭霸',style: TextStyle(color: Theme.of(context).primaryColor),),
             ),
           )
         ],

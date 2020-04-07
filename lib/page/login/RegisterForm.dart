@@ -70,7 +70,6 @@ class RegisterFormState extends State<RegisterForm>
           },
         ),
         new Container(
-          margin: EdgeInsets.only(top: ScreenUtil.getInstance().setWidth(110)),
           width: ScreenUtil.getInstance().setWidth(750),
           child: new Column(
             children: <Widget>[
@@ -116,7 +115,7 @@ class RegisterFormState extends State<RegisterForm>
               new Container(
                   width: double.infinity,
                   margin: EdgeInsets.only(
-                      top: ScreenUtil.getInstance().setWidth(85)),
+                      top: ScreenUtil.getInstance().setHeight(40)),
                   height: ScreenUtil.getInstance().setWidth(120),
                   child: new RaisedButton(
                       onPressed: () {

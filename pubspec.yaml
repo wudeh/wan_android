@@ -41,6 +41,11 @@ dependencies:
   flutter_html: ^0.9.6  #解析HTML字符串
   connectivity: 0.4.8+2 #监听网络状态
   provider: 4.0.4  # 状态管理
+  package_info: 0.4.0+16 # 获得应用版本信息
+  flutter_downloader: 1.4.2 # 下载文件
+  path_provider: 1.6.5  #获得文件路径
+  permission_handler: 5.0.0+hotfix.3  # 请求权限
+  progress_dialog: 1.2.1  # 进度显示插件
 
 dev_dependencies:
   flutter_test:

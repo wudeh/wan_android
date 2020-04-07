@@ -4,10 +4,17 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:multi_image/page/MainPage.dart';
 import 'package:provider/provider.dart';
 import './page/provider/Color.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 
 EventBus eventBus = EventBus();
 
-void main() => runApp(MyApp());
+void main() async {
+  // flutter_download 插件初始化
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterDownloader.initialize();
+
+  runApp(new MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

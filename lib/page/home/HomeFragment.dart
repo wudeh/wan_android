@@ -12,7 +12,7 @@ import 'package:multi_image/page/home/SearchPage.dart';
 import 'package:multi_image/r.dart';
 import 'package:multi_image/event/LoginEvent.dart';
 import '../../main.dart';
-import '../my/Drawer.dart';
+import '../Drawer/Drawer.dart';
 
 import '../BrowserPage.dart';
 

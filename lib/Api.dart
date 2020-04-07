@@ -2,7 +2,18 @@ class Api {
 
   static const String BASE_URL = "https://www.wanandroid.com/";
 
-  static const String TEST_URL = "https://api.hencoder.com/author";
+  static const String API_KEY = "6f168a946f5455fc625b7f192bc45a22";
+  static const String APP_KEY = "a89503605df3ccc28fc8eb214fbdde56";
+
+
+  // 查看版本信息 看看是否需要更新
+  static const String CHECK_VERSION = "https://www.pgyer.com/apiv2/app/check";
+
+  // 查看线上安装包大小
+  static const String APP_SIZE = "https://www.pgyer.com/apiv2/app/view";
+
+  // 下载更新安装包
+  static const String INSTALL = "https://www.pgyer.com/apiv2/app/install";
 
   //首页banner
   static const String BANNER = "banner/json";
