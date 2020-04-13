@@ -46,6 +46,7 @@ dependencies:
   path_provider: 1.6.5  #获得文件路径
   permission_handler: 5.0.0+hotfix.3  # 请求权限
   progress_dialog: 1.2.1  # 进度显示插件
+  mobsms: ^1.1.0  # 验证码请求
 
 dev_dependencies:
   flutter_test:

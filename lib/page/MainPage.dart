@@ -56,11 +56,6 @@ class _splashPageState extends State<splashPage> with SingleTickerProviderStateM
     });
   }
 
-  //取消倒计时
-  void _cancelTimer(){
-    _timer.cancel();
-  }
-
   //获取本地用户信息
   getUserInfo() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();

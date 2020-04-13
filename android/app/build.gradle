@@ -24,6 +24,7 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'com.mob.sdk'
 
 def keystorePropertiesFile = rootProject.file("key.properties")
 def keystoreProperties = new Properties()
@@ -74,4 +75,30 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+MobSDK {
+    appKey "2ebc71e3dda40"
+    appSecret "9b0d579b5bc355a8528611bedf8ceda4"
+
+    // ShareSDK {
+    //     //平台配置信息
+    //     devInfo {
+    //         Wechat {
+    //             appId "wx4868b35061f87885"
+    //             appSecret "64020361b8ec4c99936c0e3999a9f249"
+    //         }
+    //         QQ {
+    //             appId "100371282"
+    //             appKey "aed9b0303e3ed1e27bae87c33761161d"
+    //             shareByAppClient true
+    //         }
+    //         SinaWeibo {
+    //             appKey "3675175832"
+    //             appSecret "f7f24b1ffdf64888e8d0fe75e1fa6048"
+    //             // callbackUri "https://www.baidu.com/"
+    //             shareByAppClient true
+    //         }
+    //     }
+    // }
 }

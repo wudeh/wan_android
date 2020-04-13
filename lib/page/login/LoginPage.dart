@@ -13,7 +13,6 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      // resizeToAvoidBottomInset: true,
       body: new Stack(
         children: <Widget>[
           Container(
